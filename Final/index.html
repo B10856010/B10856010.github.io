@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+        
+        nav {
+            width: 100%;
+            background: lightpink;
+            height: 100%;
+        }
+        
+        nav ul {
+            float: right;
+            margin-right: 20px;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0px 30px;
+        }
+        
+        nav ul li a {
+            color: black;
+            font-size: 18px;
+        }
+        
+        lable.logo {
+            color: black;
+            font-size: 30px;
+            line-height: 80px;
+            padding: 100px;
+        }
+        
+        @media (max-width: 500px) {
+            li {
+                text-align: center;
+                display: block;
+                width: 100%;
+            }
+        }
+        
+        a:hover {
+            background-color: darkorchid;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <nav>
+        <lable class="logo">logo</lable>
+        <ul>
+            <li><a href="#">HOME1</a></li>
+            <li><a href="#">HOME2</a></li>
+            <li><a href="#">HOME3</a></li>
+            <li><a href="#">HOME4</a></li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
