@@ -6,71 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            text-decoration: none;
-            list-style: none;
-        }
-        
-        nav {
-            width: 100%;
-            background: lightpink;
-            height: 100%;
-        }
-        
-        nav ul {
-            float: right;
-            margin-right: 20px;
-        }
-        
-        nav ul li {
-            display: inline-block;
-            line-height: 80px;
-            margin: 0px 30px;
-        }
-        
-        nav ul li a {
-            color: black;
-            font-size: 18px;
-        }
-        
-        lable.logo {
-            color: black;
-            font-size: 30px;
-            line-height: 80px;
-            padding: 100px;
-        }
-        
-        @media (max-width: 500px) {
-            li {
-                text-align: center;
-                display: block;
-                width: 100%;
-            }
-        }
-        
-        a:hover {
-            background-color: darkorchid;
-        }
-    </style>
-
+    <link rel=stylesheet type="text/css" href="css.css">
 
 </head>
 
 <body>
 
-    <nav>
-        <lable class="logo">logo</lable>
-        <ul>
-            <li><a href="#">HOME1</a></li>
-            <li><a href="#">HOME2</a></li>
-            <li><a href="#">HOME3</a></li>
-            <li><a href="#">HOME4</a></li>
-        </ul>
-    </nav>
+    <input type="checkbox" name="" id="menu">
 
+    <div class="header">
+        <h1 class="logo">
+            <a href="#"><img src="https://www.pcschool.com.tw/updimg/act/Blog/content/D00027/02.jpg">
+        </h1>
+        <label for="menu" class="btn"> 
+            <span>選單</span>
+        </label>
+        <nav>
+            <a href="#">RWD 基本概念</a>
+            <a href="#">RWD 基本實作方法</a>
+            <a href="#">RWD 設計模式</a>
+            <a href="reference.html">參考資料</a>
+        </nav>
+    </div>
+
+
+
+    <div class="about">
+        <div class="wrap">
+            <div class="title">
+                <h2>RWD 基本概念</h2>
+                <p>RWD（Responsive Web Design）中文翻作「響應式網站設計」，是一種為了讓網頁在各種尺寸的裝置下，畫面都能呈現合適比例的設計原則。</p>
+            </div>
+            <div class="item-group">
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://uploads-ssl.webflow.com/5d3a7aed4e11720246d46f49/5d79b73bc9044ed2d7177c37_4baauDt.jpeg">
+                    </div>
+                    <div class="text">
+                        <p>有一種更容易理解 RWD 概念的比喻是「內容就像水」。當你在設計網站排版時，能根據 RWD 的設計原則實作，網站內容就會像水一般，在各種裝置中自然的流動成最適當的樣子。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://uploads-ssl.webflow.com/5d3a7aed4e11720246d46f49/5d79c1d07e70c4e767514939_rwd%20sample%20short.gif">
+                    </div>
+                    <div class="text">
+                        <p>上圖以 Medium 為例，當你試著調整視窗寬度時，會發現網頁內容隨著寬度變小而變換版面，我們就可以說這個網站符合 RWD 的設計原則。</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="two">
+        <div class="wrap">
+            <div class="item-group">
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://www.ibest.tw/images/02/02.jpg">
+                    </div>
+                    <div class="text">
+                        <h3>RWD核心原理：使用CSS3 Media Query</h3>
+                        <p>響應式網頁設計的主要核心技術是css3 media query，說穿了就是讓不同解析度去套用不同的css設定(看起來很簡單，但會真的實作起來要注意的雜事很多)。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>製作者:尤智弘</p>
+    </div>
 </body>
 
 </html>
