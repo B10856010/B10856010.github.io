@@ -43,6 +43,10 @@ img {
     text-align: center;
 }
 
+.text .text_index {
+    background-color: orange;
+}
+
 .item {
     margin: 0 10px 20px;
 }
